@@ -1,0 +1,75 @@
+# ============================================================
+# Enterprise Oracle Lab - Git Ignore
+# Prevent sensitive and unnecessary files from reaching GitHub
+# ============================================================
+
+# Credentials / Secrets
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.wallet
+*.sso
+*.token
+*.secret
+credentials*
+secrets*
+.env
+.env.*
+
+# SSH
+.ssh/
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+# Oracle Wallet / TDE
+wallet/
+ewallet.p12
+cwallet.sso
+
+# Oracle Password Files
+orapw*
+pwd*.ora
+
+# Database Files
+*.dbf
+*.ctl
+
+# Redo / Archive Logs
+*.arc
+
+# RMAN Backup Pieces
+*.bkp
+*.bak
+
+# Data Pump
+*.dmp
+
+# Oracle Installation Media
+*.zip
+*.iso
+*.rpm
+
+# Large Logs
+*.trc
+*.trm
+
+# Terraform / Cloud Secrets
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary Files
+*.tmp
+*.temp
